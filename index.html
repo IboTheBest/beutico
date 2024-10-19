@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Beautico</title>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="bg-[#6244A3] flex align-center justify-center py-[14px] text-[white] gap-[8px]" > 
+            <p class="text-[14px] ">Free worldwide shipping for orders over $55.</p>
+            <a href="#">Shop now</a>
+        </div>
+        <div class="containers mx-auto relative bg-[white]">
+            <nav>
+                <ul class="flex align-center gap-[32px] justify-center">
+                    <li class="text-[#697586] text-[16px] px-[16px] py-[24px]">
+                        <a href="#">Products</a>
+                    </li>
+                    <li class="text-[#697586] text-[16px] px-[16px] py-[24px]">
+                        <a href="#">Story</a>
+                    </li>
+                    <li class="text-[#697586] text-[16px] px-[16px] py-[24px]">
+                        <a href="#">Collections</a>
+                    </li>
+                    <li class="text-[#697586] text-[16px] px-[16px] py-[24px]">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="absolute flex align-center gap-[8px] right-0 top-[9px]" >
+                <button class="flex gap-[4px] justify-center align-center border-solid border-2 border-[#CDD5DF] w-[100px] py-[9px] rounded-[64px]" >
+                    <img src="./images/shopping_bag.svg" alt="shopping_bag" width="20" height="30">
+                    <span> Cart</span>
+                </button>
+                <button class="bg-[#CF4D74] w-[119px] py-[9px] text-[white] rounded-[64px]">Subscribe</button>
+            </div>
+        </div>
+    </header>
+    <section class="hero-section py-[78px] "> 
+        <div class="container mx-auto">
+            <div>
+                <div class="w-[560px] flex flex-col gap-[28px]">
+                    <h2 class="text-[56px] leading-[67px] text-[#3C2769]">Hydrated skin in 3 easy steps</h2>
+                    <p class="text-[20px] leading-[30px] text-[#3C2769]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique duis Cursus mi quis viverra ornare.</p>
+                    <div class="flex gap-[16px] align-center"> 
+                        <button class="w-[143px] py-[17px] bg-[#CF4D74] text-[16px] leading-[24px]   rounded-[64px]">Shop now</button>
+                        <button class="w-[138px] py-[17px] text-[16px] leading-[24px] border-2 border-[#CDD5DF] rounded-[64px]">Our story</button>
+                    </div>
+                </div>
+                <div class=" mt-[209px]" >
+                    <p class="text-[14px] leading-[21px] text-[#3C2769]">Trusted by the world's best companies</p>
+                    <div  class="flex align-center gap-[32px]">
+                        <img src="./images/logo.svg" alt="logo" width="124" height="24">
+                        <img src="./images/logo-2.svg" alt="logo" width="117" height="24">
+                        <img src="./images/logo3.svg" alt="logo" width="118" height="24">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    </script>
+</body>
+</html>
